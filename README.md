@@ -6,16 +6,16 @@ The list of sites can be found in `main.go`.
 
 # Installation
 
-You can build statically linked optimized for size binary:
+You can build statically linked binary optimized for size:
 
 ```
 make
 ```
 
-Binary will be statically linked and can be distributed as needed.
+It can be distributed as needed.
 (You can safely skip errors regarding UPX as it is used only for compression).
 
-Or install it using go get:
+Or install it using `go get`:
 
 ```
 $ go get github.com/naquad/bomber
@@ -25,9 +25,9 @@ Enjoy!
 
 # Usage
 
-Just run the executable on the destination host:
+Run the executable on the destination host:
 ```
-$ ./bomber
+$ ./bomber # or w/o path: bomber
 ```
 
 If the resource consumption is more than you can spare then you can tweak some limits:
