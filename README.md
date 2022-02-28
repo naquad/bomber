@@ -27,7 +27,12 @@ Enjoy!
 
 Run the executable on the destination host:
 ```
-$ ./bomber # or w/o path: bomber
+$ ./bomber
+```
+
+Or w/o relative path if it was installed using `go get`:
+```
+$ bomber
 ```
 
 If the resource consumption is more than you can spare then you can tweak some limits:
@@ -37,7 +42,7 @@ Usage of ./bomber:
   -connections int
     	number of simultaneous requests (default 1000)
   -cores int
-    	number of CPU cores to use (default 8)
+    	number of CPU cores to use (default: all cores)
   -timeout int
     	HTTP connection timeout (in seconds) (default 1)
 ```
